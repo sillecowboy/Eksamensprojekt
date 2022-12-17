@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>menu</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    nav{
+        margin-top: 50px;
+        width:100%;
+        display:flex;            
+        align-items:center;
+        flex-direction:column;
+        gap:10px;
+
+    }
+
+    nav a{
+        text-decoration: none;
+        font-size: 20pt;
+        width: 100%;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+    }
+
+    nav a:hover{
+        color: grey;
+    }
+
+    nav img{
+            width:200px;
+            height: auto;
+        }
+
+    .tekop{
+        margin-bottom: 5%;
+    }
+
+
+    /*MOBIL*/
+    @media screen and (max-width:810px){
+        /*BILLEDE UNDER TEKST*/
+        .tekop {
+        margin-left: 10%;
+        width: 30%;
+        }
+    }
+
+    /*LAPTOP*/
+    @media screen and (min-width: 810px){
+        .tekop {
+        margin-left: 20%;
+        }
+}
+</style>
+<body>
+    <main>
+        <nav>
+            <a class="menu" href="index.html">Forside</a>
+            <a class="menu" href="facts.html">Facts</a>
+            <a class="menu" href="historie.html">Historie</a>
+            <a class="menu" href="næringsindhold.html">Næringsindhold</a>
+            <a class="menu" href="konkurrence.html">Konkurrence</a>
+        </nav>
+    </main>
+
+    <div>
+        <img src="images/tekop.png" alt="tekop" class="tekop">
+    </div>
+</body>
+</html>

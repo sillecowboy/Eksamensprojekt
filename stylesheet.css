@@ -1,0 +1,165 @@
+/*RESET REGLER*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/*GENERELLE REGLER*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+body {
+font-family: 'Quicksand', sans-serif;    
+}
+
+.background {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*FORSIDE*/
+
+     /*FORSIDE VIDEO*/
+.forside {
+    background-image: url(images/forsidevideo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+.midte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: grey;
+}
+
+.læsmere {
+    border-style: groove;
+    border-radius: 5px;
+    border-spacing: 10px;
+    padding: 10px 15px 10px 15px;
+}
+
+/*TEKSTBOKSE*/
+.tekstboks {
+    color: white;
+    border-style: groove;
+    border-radius: 5px;
+    border-spacing: 10px;
+    padding: 10px 15px 10px 15px; 
+    align-items: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+}
+
+/*NÆRINGSINDHOLD*/
+.næringsindhold {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    line-height: 22px;
+    font-size: 12px;
+}
+
+.fedtekst {
+    font-weight: bold;
+}
+
+#mål {
+    text-align: right;
+}
+
+/*KONKURRENCE*/
+.konkurrence {
+    color: white;
+    border-style: groove;
+    border-radius: 5px;
+    border-spacing: 10px;
+    padding: 10px 15px 10px 15px; 
+    align-items: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#tebrevlogo {
+    position: absolute;
+    bottom: 10px;
+}
+
+
+/*HISTORIE*/
+.historie {
+    font-size: 14px;
+}
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+/*MOBIL*/
+@media screen and (max-width:810px){
+
+    /*LOGO I HEADEREN*/
+    .logo {
+        display: none;
+    }
+
+    /*BILLEDER UNDER TEKSTBOKSE*/
+    .tekstbillede {
+        width: 30%;
+        padding-left: 10%;
+    }
+
+    #pchistorie {
+        display: none;
+    }
+}
+
+/*LAPTOP*/
+@media screen and (min-width: 810px){
+
+    /*BILLEDER UNDER TEKSTBOKSE*/    
+    .tekstbillede {
+        padding-left: 30%;
+    }
+
+    #pchistorie {
+        position: absolute;
+        bottom: 20px;
+        padding-left: 60%;
+    }
+
+}
